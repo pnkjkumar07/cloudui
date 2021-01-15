@@ -1,0 +1,43 @@
+{
+  "resource": [
+    {
+      "google_compute_instance": [
+        {
+          "cloud_ui_poc_vm": [
+            {
+              "allow_stopping_for_update": true,
+              "boot_disk": [
+                {
+                  "initialize_params": [
+                    {
+                      "image": "rhel-cloud/rhel-7"
+                    }
+                  ]
+                }
+              ],
+              "machine_type": "n1-standard-1",
+              "name": "test",
+              "network_interface": [
+                {
+                  "network": "google_compute_network.cloud_ui_poc_network.self_link"
+                }
+              ],
+              "service_account": [
+                {
+                  "email": "google_service_account.src_acc_poc.email",
+                  "scopes": [
+                    "cloud-platform"
+                  ]
+                }
+              ],
+              "tags": [
+                "web"
+              ],
+              "zone": "us-central1-a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "google_compute_image": [
+        {
+          "t-compute-image": [
+            {
+              "family": "var.source_image_family",
+              "project": "var.source_image_project"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resource": [
+    {
+      "google_compute_disk": [
+        {
+          "t-compute-disk": [
+            {
+              "image": "data.google_compute_image.t-compute-image.self_link",
+              "name": "var.instance_template_name}-vol",
+              "size": 60,
+              "type": "pd-ssd",
+              "zone": "var.compute_disk_zone"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

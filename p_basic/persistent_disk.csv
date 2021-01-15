@@ -1,0 +1,2 @@
+"data__google_compute_image__t-compute-image__family","data__google_compute_image__t-compute-image__project","resource__google_compute_disk__t-compute-disk__image","resource__google_compute_disk__t-compute-disk__name","resource__google_compute_disk__t-compute-disk__size","resource__google_compute_disk__t-compute-disk__type","resource__google_compute_disk__t-compute-disk__zone"
+"var.source_image_family","var.source_image_project","data.google_compute_image.t-compute-image.self_link","var.instance_template_name}-vol","60","pd-ssd","var.compute_disk_zone"

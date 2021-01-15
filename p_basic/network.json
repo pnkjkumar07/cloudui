@@ -1,0 +1,30 @@
+{
+  "resource": [
+    {
+      "google_compute_network": [
+        {
+          "cloud_ui_poc_network": [
+            {
+              "auto_create_subnetworks": false,
+              "name": "cloud-ui-poc-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "google_compute_subnetwork": [
+        {
+          "cloud_ui_poc_subnetwork": [
+            {
+              "ip_cidr_range": "10.2.0.0/16",
+              "name": "poc-subnetwork",
+              "network": "google_compute_network.cloud_ui_poc_network.id",
+              "region": "us-central1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+"allow__protocol","name","network","source_tags__-","allow__ports__001","allow__ports__002","allow__ports__003"
+"icmp","test-firewall","google_compute_network.cloud_ui_poc_network.name","web","","",""
+"tcp","","","","80","8080","1000-2000"

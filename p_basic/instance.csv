@@ -1,0 +1,2 @@
+"allow_stopping_for_update","boot_disk__initialize_params__image","machine_type","name","network_interface__network","service_account__email","service_account__scopes__-","tags__-","zone"
+"True","rhel-cloud/rhel-7","n1-standard-1","test","google_compute_network.cloud_ui_poc_network.self_link","google_service_account.src_acc_poc.email","cloud-platform","web","us-central1-a"
